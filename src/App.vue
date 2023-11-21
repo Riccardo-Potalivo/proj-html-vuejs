@@ -1,6 +1,10 @@
 <template>
   <div>
-    <HeaderComponent/>
+    
+    <header>
+      <HeaderComponent/>
+    </header>
+
 
   </div>
 </template>
