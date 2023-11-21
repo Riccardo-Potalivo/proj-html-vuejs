@@ -29,7 +29,6 @@ ul {
 }
 
 .btn_primary {
-  display: inline-block;
   border: solid 2px $PrimaryColor;
   color: $PrimaryColor;
   text-transform: uppercase;
@@ -37,9 +36,9 @@ ul {
   padding: 1rem 2rem;
   line-height: 1;
   font-size: 1.1rem;
-  cursor: pointer;
+  text-decoration: none;
 
-    &:hover {
-      filter: brightness(80%);
-    }
+  &:hover {
+    filter: brightness(80%);
+  }
 }

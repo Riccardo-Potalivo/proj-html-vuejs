@@ -3,7 +3,7 @@
         <div class="container">
             <p class="header_description">award</p>
             <h2>Barbers</h2>
-            <div class="btn_primary">meet</div>
+            <a class="btn_primary" href="#">meet</a>
         </div>
         <svg
             class="fusion-big-triangle-candy d-none d-lg-block " 
@@ -22,7 +22,7 @@
         <div class="container">
             <p class="header_description">award</p>
             <h2>Barbers</h2>
-            <div class="btn_primary">meet</div>
+            <a class="btn_primary" href="#">meet</a>
         </div>
         <svg
             class="fusion-big-triangle-candy d-none d-lg-block " 
@@ -41,7 +41,7 @@
         <div class="container">
             <p class="header_description">award</p>
             <h2>Barbers</h2>
-            <div class="btn_primary">meet</div>
+            <a class="btn_primary" href="#">meet</a>
         </div>
     </section>
     
@@ -56,32 +56,39 @@
                 <div class="product_box">
                     <p class="header_description">award</p>
                     <h2>Barbers</h2>
-                    <div class="btn_primary">meet</div>
+                    <a class="btn_primary" href="#">meet</a>
                 </div>
             </div>
         </div>
     </section>
+        
+    <section id="reviews">
+        <div class="container">
+            <p class="header_description">award</p>
+            <h2>Barbers</h2>
+        </div>
+    </section>
     
-        <section id="blog_post">
-            <svg
-                class="fusion-big-triangle-candy d-none d-lg-block " 
-                xmlns="http://www.w3.org/2000/svg" 
-                version="1.1" 
-                width="100%" 
-                height="100" 
-                viewBox="0 0 100 100" 
-                preserveAspectRatio="none"
-            >
-                <path d="M0 100 L50 2 L100 100 Z"></path>
-            </svg>
-            <div class="container">
-                <p class="header_description">award</p>
-                <h2>Barbers</h2>
-                <div class="btn_primary">meet</div>
-            </div>
-        </section>
+    <section id="blog_post">
+        <svg
+            class="fusion-big-triangle-candy d-none d-lg-block " 
+            xmlns="http://www.w3.org/2000/svg" 
+            version="1.1" 
+            width="100%" 
+            height="100" 
+            viewBox="0 0 100 100" 
+            preserveAspectRatio="none"
+        >
+            <path d="M0 100 L50 2 L100 100 Z"></path>
+        </svg>
+        <div class="container">
+            <p class="header_description">award</p>
+            <h2>Barbers</h2>
+            <a class="btn_primary" href="#">meet</a>
+        </div>
+    </section>
 
-    </template>
+</template>
 
 <script>
     export default {
@@ -133,12 +140,16 @@
 }
 
 #featured_products {
+
+    @media (max-width: 1025px) {
+        display: none;
+    }
     
     position: relative;
     top: -7rem;
-
+    
     .container {
-        padding: 4em 0;
+        padding: 4em 0 0;
         > div {
             display: flex;
             border-top: solid 4px $PrimaryColor;
@@ -172,13 +183,24 @@
 
 }
 
+#reviews {
+    .container {
+        padding: 4em 0;
+    }
+
+    background-color: $White;
+
+    svg {
+        fill: $White;
+    }
+}
+
 #blog_post {
     .container {
-        padding: 8em 0;
+        padding: 6em 0;
     }
     
     background-color: $LightGrey;
-    background-size: cover;
 
     svg {
         fill: $White;
