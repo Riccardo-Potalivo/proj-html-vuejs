@@ -21,7 +21,7 @@
             <h1>Barber Shop</h1>
             <div class="divider"></div>
             <p>The Pinnacle of Male Grooming</p>
-            <div class="btn_primary">learn more</div>
+            <a class="btn_primary" href="#">learn more</a>
         </div>
     </section>
 </template>

@@ -26,16 +26,18 @@ $fa-font-path: '../webfonts';
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .btn_primary {
+  display: inline-block;
   border: solid 2px $PrimaryColor;
-  color: $PrimaryColor;
+  color: $PrimaryColor !important;
   text-transform: uppercase;
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 1em 2rem;
   line-height: 1;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   text-decoration: none;
 
   &:hover {
