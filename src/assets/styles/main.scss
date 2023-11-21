@@ -11,6 +11,10 @@ $fa-font-path: '../webfonts';
 
 // font Lato
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+  font-family: abrilfatface;
+  src: url(/public/font/AbrilFatface-Regular.ttf);
+}
 
 *
 {
@@ -18,6 +22,10 @@ $fa-font-path: '../webfonts';
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 .btn_primary {

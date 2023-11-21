@@ -1,7 +1,8 @@
 <template>
   <div>
-    
+
     <header>
+      
       <HeaderComponent/>
     </header>
 
