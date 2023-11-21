@@ -35,9 +35,6 @@
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 
-* {
-    // border: solid 1px white;
-}
 
 // navigation bar
 nav {
@@ -117,7 +114,7 @@ h1 {
 
 p {
     font-size: 1.3rem;
-    color: $DarkGrey;
+    color: $DarkerGrey;
     margin: 3rem 0;
     line-height: 1;
 
