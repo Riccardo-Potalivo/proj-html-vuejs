@@ -11,10 +11,10 @@
                     <img src="../assets/image/avadabarbers-logo-x2-300x104.png" width="200px" alt="logo">
                     <ul>
                         <li>Avada Barbers</li>
-                        <li>Avada Barbers</li>
-                        <li>Avada Barbers</li>
-                        <li>Avada Barbers</li>
-                        <li>Avada Barbers</li>
+                        <li>123 New York Street</li>
+                        <li>New York City</li>
+                        <li>info@yourwebsite.com</li>
+                        <li>+1 (555) 555-1212</li>
                     </ul>
                     <p>FOLLOW US</p>
                     <div class="d-flex justify-content-center gap-3">
@@ -85,6 +85,7 @@ section:first-child {
 
 section:last-child {
     background-color: $BgFooterDark;
+    
 }
 .container {
     padding: 3rem 0;

@@ -43,10 +43,16 @@ main {
   background-color: $White;
 }
 
+* :not(footer) {
+  position: relative;
+  z-index: 1;
+
+}
+
 footer {
   position: sticky;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 </style>

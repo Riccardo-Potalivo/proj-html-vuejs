@@ -1,9 +1,10 @@
 <template>
+
     <section id="award_winning">
         <div class="container">
-            <p class="header_description">award</p>
-            <h2>Barbers</h2>
-            <a class="btn_primary" href="#">meet</a>
+            <p class="header_description">award winning</p>
+            <h2>Pro Barbers</h2>
+            <a class="btn_primary" href="#">meet your new barber</a>
         </div>
         <svg
             class="fusion-big-triangle-candy d-none d-lg-block " 
@@ -20,9 +21,9 @@
 
     <section id="services">
         <div class="container">
-            <p class="header_description">award</p>
-            <h2>Barbers</h2>
-            <a class="btn_primary" href="#">meet</a>
+            <p class="header_description">mens grooming</p>
+            <h2>Services</h2>
+            <a class="btn_primary" href="#">read about our services</a>
         </div>
         <svg
             class="fusion-big-triangle-candy d-none d-lg-block " 
@@ -39,9 +40,9 @@
     
     <section id="products">
         <div class="container">
-            <p class="header_description">award</p>
-            <h2>Barbers</h2>
-            <a class="btn_primary" href="#">meet</a>
+            <p class="header_description">we have you covered</p>
+            <h2>Avada Grooming Products</h2>
+            <a class="btn_primary" href="#">shop our product range</a>
         </div>
     </section>
     
@@ -54,9 +55,12 @@
                     </div>
                 </div>
                 <div class="product_box">
-                    <p class="header_description">award</p>
-                    <h2>Barbers</h2>
-                    <a class="btn_primary" href="#">meet</a>
+                    <p class="header_description">this months featured product</p>
+                    <h2>Shaving Butter</h2>
+                    <p class="main_description pt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet enim est, vel molestie dolor ultrices ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <a class="btn_primary" href="#">buy now</a>
                 </div>
             </div>
         </div>
@@ -64,8 +68,8 @@
         
     <section id="reviews">
         <div class="container">
-            <p class="header_description">award</p>
-            <h2>Barbers</h2>
+            <p class="header_description">what people say</p>
+            <h2>Reviews</h2>
         </div>
     </section>
     
@@ -82,9 +86,9 @@
             <path d="M0 100 L50 2 L100 100 Z"></path>
         </svg>
         <div class="container">
-            <p class="header_description">award</p>
-            <h2>Barbers</h2>
-            <a class="btn_primary" href="#">meet</a>
+            <p class="header_description">tales from the barber shop</p>
+            <h2>Recent Blog Posts</h2>
+            <a class="btn_primary" href="#">read more from blog</a>
         </div>
     </section>
 
@@ -146,6 +150,12 @@
     
     position: relative;
     top: -7rem;
+
+    .main_description {
+        line-height: 2;
+        font-size: 1.2rem;
+        color: $DarkerGrey;
+    }
     
     .container {
         padding: 4em 0 0;
