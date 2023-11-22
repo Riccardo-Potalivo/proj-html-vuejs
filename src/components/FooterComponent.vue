@@ -8,7 +8,9 @@
                 </div>
                 
                 <div class="col-4 ">
-                    <img src="../assets/image/avadabarbers-logo-x2-300x104.png" width="200px" alt="logo">
+                    <a href="#">
+                        <img src="../assets/image/avadabarbers-logo-x2-300x104.png" width="200px" alt="logo">
+                    </a>
                     <ul>
                         <li>Avada Barbers</li>
                         <li>123 New York Street</li>

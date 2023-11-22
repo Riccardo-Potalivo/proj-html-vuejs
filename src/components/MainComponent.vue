@@ -115,6 +115,15 @@
         <div class="container">
             <p class="header_description">tales from the barber shop</p>
             <h2>Recent Blog Posts</h2>
+            <div class="row pt-5">
+                <BlogPostsCard
+                    v-for="el in store.blog"
+                    :key="el"
+                    :img="el.img"
+                    :title="el.title"
+                    :text="el.text"
+                />
+            </div>
             <a class="btn_primary" href="#">read more from blog</a>
         </div>
     </section>
@@ -126,6 +135,7 @@
     import ServiceCard from './elements/ServiceCard.vue'
     import ProductsCard from './elements/ProductsCard.vue'
     import ReviewsCard from './elements/ReviewsCard.vue'
+    import BlogPostsCard from './elements/BlogPostsCard.vue'
 
     export default {
         name: 'MainComponent',
@@ -133,7 +143,8 @@
         components: {
             ServiceCard,
             ProductsCard,
-            ReviewsCard
+            ReviewsCard,
+            BlogPostsCard
         },
 
         data() {

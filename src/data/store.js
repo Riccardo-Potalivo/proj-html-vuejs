@@ -57,4 +57,22 @@ export const store = {
       user: "Mark Wilson",
     },
   ],
+
+  blog: [
+    {
+      img: "avadabarbers-second-blog-700x441.jpg",
+      title: "Avada Barbers Now Open",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.",
+    },
+    {
+      img: "avadabarbers-choosing-blog-700x441.jpg",
+      title: "Choosing The Right Barber",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.",
+    },
+    {
+      img: "avadabarbers-ourservice-blog-700x441.jpg",
+      title: "Quick Service Guide",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.",
+    },
+  ],
 };
