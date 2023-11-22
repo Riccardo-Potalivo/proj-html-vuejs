@@ -38,16 +38,18 @@
 <style lang="scss" scoped>
 @use '../src/assets/styles/partials/variables' as *;
 
+header {
+  position: relative;
+  z-index: 2;
+
+}
 
 main {
   background-color: $White;
-}
-
-* :not(footer) {
   position: relative;
   z-index: 1;
-
 }
+
 
 footer {
   position: sticky;

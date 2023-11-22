@@ -23,6 +23,15 @@
         <div class="container">
             <p class="header_description">mens grooming</p>
             <h2>Services</h2>
+            <div class="row pt-5">
+                <ServiceCard
+                    v-for="el in store.services"
+                    :key="el"
+                    :img="el.img"
+                    :title="el.title"
+                    :text="el.text"
+                />
+            </div>
             <a class="btn_primary" href="#">read about our services</a>
         </div>
         <svg
@@ -95,12 +104,25 @@
 </template>
 
 <script>
+    import { store } from '../data/store'
+    import ServiceCard from './elements/ServiceCard.vue'
+
     export default {
-        name: 'MainComponent'
+        name: 'MainComponent',
+
+        components: {
+            ServiceCard
+        },
+
+        data() {
+            return {
+                store
+            }
+        }
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '../assets/styles/partials/variables' as *;
 
 // section background
@@ -150,12 +172,6 @@
     
     position: relative;
     top: -7rem;
-
-    .main_description {
-        line-height: 2;
-        font-size: 1.2rem;
-        color: $DarkerGrey;
-    }
     
     .container {
         padding: 4em 0 0;
@@ -218,12 +234,18 @@
 section {
     text-align: center;
 }
+
 .header_description {
-    // font-size: 4rem;
     color: $PrimaryColor;
     text-transform: uppercase;
+    margin: 0;
+}
 
-margin: 0;}
+.main_description {
+    line-height: 2;
+    font-size: 1.2rem;
+    color: $DarkerGrey;
+}
 
 h2 {
     font-family: abrilfatface;
