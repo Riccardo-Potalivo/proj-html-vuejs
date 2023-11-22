@@ -39,4 +39,22 @@ export const store = {
       price: "$30.00",
     },
   ],
+
+  reviews: [
+    {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.",
+      img: "avadabarbers-trimcut-gallery6-200x200.jpg",
+      user: "John Doe",
+    },
+    {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.",
+      img: "avadabarbers-trimcut-gallery7-200x201.jpg",
+      user: "Pete Jones",
+    },
+    {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.",
+      img: "avadabarbers-trimcut-gallery3-200x201.jpg",
+      user: "Mark Wilson",
+    },
+  ],
 };

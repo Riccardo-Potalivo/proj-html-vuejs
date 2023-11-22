@@ -88,6 +88,15 @@
         <div class="container">
             <p class="header_description">what people say</p>
             <h2>Reviews</h2>
+            <div class="row py-5">
+                <ReviewsCard
+                        v-for="el in store.reviews"
+                        :key="el"
+                        :text="el.text"
+                        :img="el.img"
+                        :user="el.user"
+                    />
+            </div>
         </div>
     </section>
     
@@ -116,13 +125,15 @@
     import { store } from '../data/store'
     import ServiceCard from './elements/ServiceCard.vue'
     import ProductsCard from './elements/ProductsCard.vue'
+    import ReviewsCard from './elements/ReviewsCard.vue'
 
     export default {
         name: 'MainComponent',
 
         components: {
             ServiceCard,
-            ProductsCard
+            ProductsCard,
+            ReviewsCard
         },
 
         data() {
@@ -221,7 +232,7 @@
 
 #reviews {
     .container {
-        padding: 4em 0;
+        padding: 4em 0 0;
     }
 
     svg {
@@ -270,6 +281,14 @@ h4 {
     font-family: abrilfatface;
     font-size: 2rem;
     color: $PrimaryColor;
+}
+
+h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
+    color: $PrimaryColor;
+    margin-top: 1rem;
 }
 
 </style>
