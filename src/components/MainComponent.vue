@@ -48,9 +48,18 @@
     </section>
     
     <section id="products">
-        <div class="container">
+        <div>
             <p class="header_description">we have you covered</p>
             <h2>Avada Grooming Products</h2>
+            <div class="row py-5">
+                <ProductsCard
+                        v-for="el in store.products"
+                        :key="el"
+                        :img="el.img"
+                        :title="el.title"
+                        :price="el.price"
+                    />
+            </div>
             <a class="btn_primary" href="#">shop our product range</a>
         </div>
     </section>
@@ -106,12 +115,14 @@
 <script>
     import { store } from '../data/store'
     import ServiceCard from './elements/ServiceCard.vue'
+    import ProductsCard from './elements/ProductsCard.vue'
 
     export default {
         name: 'MainComponent',
 
         components: {
-            ServiceCard
+            ServiceCard,
+            ProductsCard
         },
 
         data() {
@@ -125,7 +136,7 @@
 <style lang="scss">
 @use '../assets/styles/partials/variables' as *;
 
-// section background
+// section
 #award_winning {
     .container {
         padding: 8em 0;
@@ -152,8 +163,8 @@
 }
 
 #products {
-    .container {
-        padding: 4em 0 8rem;
+    & > div {
+        padding: 4em 5% 8rem;
     }
 
     background-image: url(../assets/image/avadabarbers-reviewsbackground.jpg);
@@ -231,6 +242,7 @@
     }
 }
 
+// general
 section {
     text-align: center;
 }
@@ -251,6 +263,13 @@ h2 {
     font-family: abrilfatface;
     font-size: 4rem;
     color: $DarkGrey;
+}
+
+
+h4 {
+    font-family: abrilfatface;
+    font-size: 2rem;
+    color: $PrimaryColor;
 }
 
 </style>

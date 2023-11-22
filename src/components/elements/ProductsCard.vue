@@ -1,20 +1,20 @@
 <template>
-    <div class="col-4 p-5">
+    <div class="col-3 p-2">
         <img :src="'/image/' + img" :alt="title">
-        <h4 class="my-4">{{ title }}</h4>
-        <p class="main_description">{{ text }}</p>
+        <h4>{{ title }}</h4>
+        <span class="main_description">{{ price }}</span>
 
     </div>
 </template>
 
 <script>
     export default {
-        name: 'ServiceCard',
+        name: 'ProductsCard',
 
         props: {
             img: String,
             title: String,
-            text: String
+            price: String
         }
     }
 </script>
@@ -23,7 +23,12 @@
 @use '../../assets/styles/partials/variables' as *;
 
 img {
-    height: 100px;
+    width: 100%;
+}
+
+span {
+    color: $PrimaryColor;
+    font-size: 0.7rem;
 }
 
 
