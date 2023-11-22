@@ -36,5 +36,17 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../src/assets/styles/partials/variables' as *;
+
+
+main {
+  background-color: $White;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+}
 
 </style>

@@ -118,7 +118,6 @@
         padding: 8em 0;
     }
     
-    background-color: $White;
     background-size: cover;
 
     svg {
@@ -187,8 +186,6 @@
     .container {
         padding: 4em 0;
     }
-
-    background-color: $White;
 
     svg {
         fill: $White;

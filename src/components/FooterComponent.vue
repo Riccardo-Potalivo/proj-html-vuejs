@@ -71,7 +71,7 @@ section:first-child {
     ul {
         margin: 3rem 0;
     }
-
+    
 
     .col-4 {
         text-align: center;
@@ -80,7 +80,7 @@ section:first-child {
     .btn_primary {
         font-size: 0.8rem;
     }
-
+    
 }
 
 section:last-child {
