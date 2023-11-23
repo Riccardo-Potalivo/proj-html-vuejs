@@ -46,15 +46,21 @@
 
             </div>
         </nav>
-        <div 
-            class="container d-flex flex-column justify-content-center align-items-md-baseline align-items-center" 
-            id="main_header"
-        >
-            <h1>Barber Shop</h1>
-            <div class="divider"></div>
-            <p>The Pinnacle of Male Grooming</p>
-            <a class="btn_primary" href="#">learn more</a>
+
+        <div class="container" id="main_header">
+            <div class="row h-100 align-items-center">
+                <div class="left_ col-lg-6 col-12 d-flex flex-column align-items-sm-baseline align-items-center">
+                    <h1>Barber Shop</h1>
+                    <div class="divider"></div>
+                    <p>The Pinnacle of Male Grooming</p>
+                    <a class="btn_primary" href="#">learn more</a>
+                </div>
+                <div class="right_ col-6 d-none d-lg-block ">
+                    <img src="../assets/image/avadabarbers_hero_focalmirror-800x1100.png" alt="hero bg">
+                </div>
+            </div>
         </div>
+
     </section>
 </template>
 
@@ -222,12 +228,41 @@ section {
 
 #main_header {
     height: 100vh;
+    .left_ {
+        animation: slideInLeft 1s;
+    }
+    .right_ {
+        animation: slideInRight 1s;
+        
+        img {
+            width: 100%;
+            max-width: 550px;
+        }
+    }
 
-    @media (min-width: 1025px) {
-        background-image: url('../assets/image/avadabarbers_hero_focalmirror-800x1100.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: 35rem;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

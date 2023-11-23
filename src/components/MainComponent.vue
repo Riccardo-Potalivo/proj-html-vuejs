@@ -149,9 +149,18 @@
 
         data() {
             return {
-                store
+                store,
+                scrollCount: 0
             }
-        }
+        },
+                
+        mounted() {
+            window.addEventListener("scroll", () => {
+                // console.log(window.scrollY)
+                this.scrollCount = window.scrollY;
+            });
+
+        },
     }
 </script>
 
@@ -175,6 +184,10 @@
 #services {
     .container {
         padding: 8em 0;
+        
+        div {
+            opacity: 0.5;
+        }
     }
     
     background-size: cover;
@@ -182,6 +195,7 @@
     svg {
         fill: #121315;
     }
+    
 }
 
 #products {
