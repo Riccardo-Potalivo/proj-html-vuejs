@@ -30,9 +30,9 @@
                 </a>
 
                 <ul>
-                    <!-- <li class="text-white " id="scroll">
+                    <li class="text-white " id="scroll">
                         {{ scrollCount }}
-                    </li> -->
+                    </li>
                     <li id="cart_item">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </li>
@@ -118,6 +118,8 @@
     height: 100vh;
     width: 0%;
     background-color: $Black;
+    background-size: cover;
+    // background-image: none;
     color: $White;
     z-index: 9999;
     transition: 0.5s;
@@ -129,6 +131,30 @@
         margin: 2rem;
         cursor: pointer;
         transition: 0.5s;
+
+        &:hover {
+            color: $PrimaryColor;
+        }
+    }
+
+    ul {
+        padding: 3rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    li {
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        font-size: 1.5rem;
+        flex-grow: 1;
+        padding: 1rem;
 
         &:hover {
             color: $PrimaryColor;

@@ -82,7 +82,7 @@ export const store = {
       img: "/image/avadabarbers-homepage-hero-bg.jpg",
     },
     {
-      title: "About US",
+      title: "About Us",
       img: "/image/avadabarbers-about-ptb-retina.jpg",
     },
     {
