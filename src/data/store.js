@@ -75,4 +75,35 @@ export const store = {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.",
     },
   ],
+
+  menu: [
+    {
+      title: "Home",
+      img: "/image/avadabarbers-homepage-hero-bg.jpg",
+    },
+    {
+      title: "About US",
+      img: "/image/avadabarbers-about-ptb-retina.jpg",
+    },
+    {
+      title: "Services",
+      img: "/image/avadabarbers-trimcut-hero.jpg",
+    },
+    {
+      title: "Shop",
+      img: "/image/avadabarbers-blog-ptb-retina.jpg",
+    },
+    {
+      title: "Our Team",
+      img: "/image/avadabarbers-reviewsbackground.jpg",
+    },
+    {
+      title: "Blog",
+      img: "/image/avadabarbers-services-ptb-retina.jpg",
+    },
+    {
+      title: "Contact Us",
+      img: "/image/avadabarbers-contact-ptb-retina.jpg",
+    },
+  ],
 };

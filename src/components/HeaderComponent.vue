@@ -2,18 +2,31 @@
     <section>
         <div 
             id="menu"
-            :class="{ 'w-100' : menuOffcanvas}"
-            >
+            :class="{ 'w-100' : menuOffcanvas, bgMenu}"
+        >
             <i 
                 class="fa-solid fa-xmark fa-xl"
                 :class="{ 'd-none' : !menuOffcanvas}"
                 @click="menuOffcanvas = false"
             ></i>
+
+            <ul>
+                <li
+                    v-for="el in store.menu"
+                    :key="el"
+                    >
+                    <a 
+                    @mouseover="bgChange(el.img)"
+                    @mouseout="bgDefault"
+                    href="#">{{ el.title }}</a>
+                </li>
+            </ul>
         </div>
+
         <nav class="fixed-top" :class="{ 'navbar_active' : scrollCount }">
             <div class="container d-flex justify-content-between ">
                 <a href="#">
-                    <img src="../assets/image/avadabarbers-logo-x2-300x104.png" width="200px" alt="logo">
+                    <img src="../assets/image/avadabarbers-logo-x2-300x104.png" alt="logo">
                 </a>
 
                 <ul>
@@ -46,28 +59,50 @@
 </template>
 
 <script>
+    import { store } from '../data/store'
+
     export default {
         name: 'HeaderComponent',
         
         data() {
             
             return {
+                store,
                 scrollCount: 0,
                 menuOffcanvas: false
             }
         },
-
+        
         methods: {
+            bgChange(i) {
+                console.log(i);
+                document.getElementById("menu").style.backgroundImage = `url(${i})`;
+                return {
+                    
+                } 
+            },
+            
+            bgDefault() {
+                document.getElementById("menu").style.backgroundImage = "";
+
+            }
+
             
         },
-
+        
         mounted() {
             window.addEventListener("scroll", () => {
-                console.log(window.scrollY)
+                // console.log(window.scrollY)
                 this.scrollCount = window.scrollY;
             });
-            
+
         },
+
+        computed: {
+            bgMenu() {
+                return 
+            }
+        }
 
     }
 </script>
@@ -82,7 +117,7 @@
     right: 0;
     height: 100vh;
     width: 0%;
-    background-color: #00000099;
+    background-color: $Black;
     color: $White;
     z-index: 9999;
     transition: 0.5s;
@@ -91,7 +126,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        padding: 2rem;
+        margin: 2rem;
+        cursor: pointer;
         transition: 0.5s;
 
         &:hover {
@@ -106,6 +142,10 @@ nav {
     
     padding: 3rem 0;
     transition: 0.5s;
+
+    img {
+        width: 200px;
+    }
 
     ul {
         display: flex;
